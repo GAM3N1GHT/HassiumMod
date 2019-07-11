@@ -21,6 +21,7 @@ public class BiomeGen {
 	@SubscribeEvent
 	public static void addFeaturesToBiomes(final FMLCommonSetupEvent event) {
 		for (final Biome biome : ForgeRegistries.BIOMES) {
+			// Lead Ore
 			biome.addFeature(
 				GenerationStage.Decoration.UNDERGROUND_ORES,
 				Biome.createDecoratedFeature(
@@ -28,6 +29,14 @@ public class BiomeGen {
 					new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, ModBlocks.LEAD_ORE.getDefaultState(), ModBlocks.LEAD_ORE.VEIN_SIZE),
 					Placement.COUNT_RANGE,
 					new CountRangeConfig(ModBlocks.LEAD_ORE.VEIN_SIZE, 10, 0, 100))); // Vein/Chunk Count, MinHeight, MaxHeightBase, MaxHeight
+			// Copper Ore
+			biome.addFeature(
+					GenerationStage.Decoration.UNDERGROUND_ORES,
+					Biome.createDecoratedFeature(
+						Feature.ORE,
+						new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, ModBlocks.COPPER_ORE.getDefaultState(), ModBlocks.COPPER_ORE.VEIN_SIZE),
+						Placement.COUNT_RANGE,
+						new CountRangeConfig(ModBlocks.COPPER_ORE.VEIN_SIZE, 10, 0, 100))); // Vein/Chunk Count, MinHeight, MaxHeightBase, MaxHeight
 		}
 	}
 	

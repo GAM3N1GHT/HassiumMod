@@ -10,6 +10,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import com.github.gam3n1ght.blocks.CopperOre;
 import com.github.gam3n1ght.blocks.LeadOre;
 import com.github.gam3n1ght.init.BiomeGen;
 import com.github.gam3n1ght.items.LeadIngot;
@@ -70,15 +72,17 @@ public class HassiumMod
     	
         @SubscribeEvent
         public static void onBlocksRegistry(final RegistryEvent.Register<Block> event) {
-            // register a new block here
-            LOGGER.info("HELLO from Register Block");
+            // Be sure to register your Blocks here to make them available in the game.
             event.getRegistry().register(new LeadOre());
+            event.getRegistry().register(new CopperOre());
         }
         
         @SubscribeEvent
         public static void onItemsRegistry(final RegistryEvent.Register<Item> event) {
+        	// Be sure to register your Items here to make them available in the game.
         	// Block Items
         	event.getRegistry().register(LeadOre.getBlockItem());
+        	event.getRegistry().register(CopperOre.getBlockItem());
         	// Items
         	event.getRegistry().register(new LeadIngot());
         }

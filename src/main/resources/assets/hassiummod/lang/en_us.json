@@ -1,4 +1,5 @@
 {
 	"block.hassiummod.lead_ore": "Lead Ore",
-	"item.hassiummod.lead_ingot": "Lead Ingot"
+	"item.hassiummod.lead_ingot": "Lead Ingot",
+	"block.hassiummod.copper_ore": "Copper Ore"
 }
