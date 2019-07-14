@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+		"particle": "hassiummod:block/linear_particle_accelerator_side",
+    	"down": "hassiummod:block/linear_particle_accelerator_top",
+    	"up": "hassiummod:block/linear_particle_accelerator_top",
+    	"east": "hassiummod:block/linear_particle_accelerator_side",
+    	"west": "hassiummod:block/linear_particle_accelerator_side",
+    	"north": "hassiummod:block/linear_particle_accelerator_front",
+    	"south": "hassiummod:block/linear_particle_accelerator_side"
+    }
+}

@@ -1,5 +1,11 @@
 {
+	"_comment": "Creative Tabs",
+
 	"block.hassiummod.lead_ore": "Lead Ore",
 	"item.hassiummod.lead_ingot": "Lead Ingot",
-	"block.hassiummod.copper_ore": "Copper Ore"
+	
+	"block.hassiummod.copper_ore": "Copper Ore",
+	"item.hassiummod.copper_ingot": "Copper Ingot",
+	
+	"block.hassiummod.linear_particle_accelerator": "Linear Particle Accelerator"
 }

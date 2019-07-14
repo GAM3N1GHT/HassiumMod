@@ -1,0 +1,17 @@
+{
+	"variants": {
+		"": { "model": "hassiummod:block/linear_particle_accelerator" },
+		"facing=north,powered=false": { "model": "hassiummod:block/linear_particle_accelerator" },
+	    "facing=south,powered=false": { "model": "hassiummod:block/linear_particle_accelerator", "y": 180 },
+	    "facing=west,powered=false": { "model": "hassiummod:block/linear_particle_accelerator", "y": 270 },
+	    "facing=east,powered=false": { "model": "hassiummod:block/linear_particle_accelerator", "y": 90 },
+	    "facing=up,powered=false": { "model": "hassiummod:block/linear_particle_accelerator", "x": -90 },
+	    "facing=down,powered=false": { "model": "hassiummod:block/linear_particle_accelerator", "x": 90 },
+	    "facing=north,powered=true": { "model": "hassiummod:block/linear_particle_accelerator_powered" },
+	    "facing=south,powered=true": { "model": "hassiummod:block/linear_particle_accelerator_powered", "y": 180 },
+	    "facing=west,powered=true": { "model": "hassiummod:block/linear_particle_accelerator_powered", "y": 270 },
+	    "facing=east,powered=true": { "model": "hassiummod:block/linear_particle_accelerator_powered", "y": 90 },
+	    "facing=up,powered=true": { "model": "hassiummod:block/linear_particle_accelerator_powered", "x": -90 },
+	    "facing=down,powered=true": { "model": "hassiummod:block/linear_particle_accelerator_powered", "x": 90 }
+	}
+}

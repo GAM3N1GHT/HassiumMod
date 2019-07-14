@@ -9,8 +9,6 @@ import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
 import net.minecraft.world.gen.placement.CountRangeConfig;
 import net.minecraft.world.gen.placement.Placement;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.registries.ForgeRegistries;
 
@@ -18,8 +16,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 @ObjectHolder(HassiumMod.MODID)
 public class BiomeGen {
 	
-	@SubscribeEvent
-	public static void addFeaturesToBiomes(final FMLCommonSetupEvent event) {
+	public static void addFeaturesToBiomes() {
 		for (final Biome biome : ForgeRegistries.BIOMES) {
 			// Lead Ore
 			biome.addFeature(
