@@ -1,7 +1,7 @@
 package com.github.gam3n1ght.blocks;
 
 import com.github.gam3n1ght.blocks.containers.LinearParticleAcceleratorContainer;
-import com.github.gam3n1ght.blocks.tiles.LinearParticleAcceleratorTile;
+import com.github.gam3n1ght.blocks.tileentities.LinearParticleAcceleratorTileEntity;
 
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.tileentity.TileEntityType;
@@ -19,7 +19,7 @@ public class ModBlocks {
 	public static LinearParticleAccelerator LINEAR_PARTICLE_ACCELERATOR;
 	
     @ObjectHolder("hassiummod:linear_particle_accelerator")
-    public static TileEntityType<LinearParticleAcceleratorTile> LINEAR_PARTICLE_ACCELERATOR_TILE;
+    public static TileEntityType<LinearParticleAcceleratorTileEntity> LINEAR_PARTICLE_ACCELERATOR_TILE;
     
 	@ObjectHolder("hassiummod:linear_particle_accelerator")
 	public static ContainerType<LinearParticleAcceleratorContainer> LINEAR_PARTICLE_ACCELERATOR_CONTAINER;

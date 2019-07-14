@@ -21,7 +21,9 @@ import org.apache.logging.log4j.Logger;
 import com.github.gam3n1ght.blocks.CopperOre;
 import com.github.gam3n1ght.blocks.LeadOre;
 import com.github.gam3n1ght.blocks.LinearParticleAccelerator;
+import com.github.gam3n1ght.blocks.ModBlocks;
 import com.github.gam3n1ght.blocks.containers.LinearParticleAcceleratorContainer;
+import com.github.gam3n1ght.blocks.tileentities.LinearParticleAcceleratorTileEntity;
 import com.github.gam3n1ght.init.BiomeGen;
 import com.github.gam3n1ght.items.CopperIngot;
 import com.github.gam3n1ght.items.LeadIngot;
@@ -134,7 +136,10 @@ public class HassiumMod
         
         @SubscribeEvent
         public static void onTileEntityRegistry(final RegistryEvent.Register<TileEntityType<?>> event) {
-        	event.getRegistry().register(LinearParticleAccelerator.getTile());
+        	event.getRegistry().register(TileEntityType.Builder.create(LinearParticleAcceleratorTileEntity::new, ModBlocks.LINEAR_PARTICLE_ACCELERATOR)
+				.build(null)
+				.setRegistryName(LinearParticleAccelerator.REGISTRY_NAME));
+//        	event.getRegistry().register(LinearParticleAccelerator.getTile());
         }
     }
 }

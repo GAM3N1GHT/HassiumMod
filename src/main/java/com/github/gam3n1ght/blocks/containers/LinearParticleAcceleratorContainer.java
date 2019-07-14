@@ -1,13 +1,18 @@
 package com.github.gam3n1ght.blocks.containers;
 
 import com.github.gam3n1ght.tools.CustomEnergyStorage;
+
+import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.container.Container;
+import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.inventory.container.Slot;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.item.crafting.IRecipeType;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.IIntArray;
 import net.minecraft.util.IWorldPosCallable;
 import net.minecraft.util.IntReferenceHolder;
 import net.minecraft.util.math.BlockPos;
@@ -28,6 +33,16 @@ public class LinearParticleAcceleratorContainer extends Container {
     private PlayerEntity playerEntity;
     private IItemHandler playerInventory;
 	
+ // -------------------------------
+//    public FurnaceContainer(int p_i50082_1_, PlayerInventory p_i50082_2_) {
+//        super(ContainerType.FURNACE, IRecipeType.SMELTING, p_i50082_1_, p_i50082_2_);
+//     }
+//
+//     public FurnaceContainer(int p_i50083_1_, PlayerInventory p_i50083_2_, IInventory p_i50083_3_, IIntArray p_i50083_4_) {
+//        super(ContainerType.FURNACE, IRecipeType.SMELTING, p_i50083_1_, p_i50083_2_, p_i50083_3_, p_i50083_4_);
+//     }
+     // -------------------------------
+     
     public LinearParticleAcceleratorContainer(int windowId, World world, BlockPos pos, PlayerInventory playerInventory, PlayerEntity player) {
         super(LINEAR_PARTICLE_ACCELERATOR_CONTAINER, windowId);
         tileEntity = world.getTileEntity(pos);

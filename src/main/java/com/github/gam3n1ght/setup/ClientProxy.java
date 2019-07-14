@@ -1,6 +1,7 @@
 package com.github.gam3n1ght.setup;
 
 import com.github.gam3n1ght.blocks.screens.LinearParticleAcceleratorScreen;
+
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.ScreenManager;
 import net.minecraft.entity.player.PlayerEntity;

@@ -1,4 +1,4 @@
-package com.github.gam3n1ght.blocks.tiles;
+package com.github.gam3n1ght.blocks.tileentities;
 
 import com.github.gam3n1ght.Config;
 import com.github.gam3n1ght.blocks.containers.LinearParticleAcceleratorContainer;
@@ -33,14 +33,14 @@ import javax.annotation.Nullable;
 import static com.github.gam3n1ght.blocks.ModBlocks.LINEAR_PARTICLE_ACCELERATOR_TILE;
 
 
-public class LinearParticleAcceleratorTile extends TileEntity implements ITickableTileEntity, INamedContainerProvider {
+public class LinearParticleAcceleratorTileEntity extends TileEntity implements ITickableTileEntity, INamedContainerProvider {
 
     private LazyOptional<IItemHandler> handler = LazyOptional.of(this::createHandler);
     private LazyOptional<IEnergyStorage> energy = LazyOptional.of(this::createEnergy);
 	
     private int counter;
     
-    public LinearParticleAcceleratorTile() {
+    public LinearParticleAcceleratorTileEntity() {
     	super(LINEAR_PARTICLE_ACCELERATOR_TILE);
     }
     

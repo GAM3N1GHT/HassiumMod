@@ -1,6 +1,5 @@
 {
 	"variants": {
-		"": { "model": "hassiummod:block/linear_particle_accelerator" },
 		"facing=north,powered=false": { "model": "hassiummod:block/linear_particle_accelerator" },
 	    "facing=south,powered=false": { "model": "hassiummod:block/linear_particle_accelerator", "y": 180 },
 	    "facing=west,powered=false": { "model": "hassiummod:block/linear_particle_accelerator", "y": 270 },
