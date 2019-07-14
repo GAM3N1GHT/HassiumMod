@@ -1,1 +1,1 @@
-gradlew build & gradlew runClient
+.\gradlew build & .\gradlew runClient

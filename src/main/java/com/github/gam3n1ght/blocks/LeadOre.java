@@ -22,10 +22,9 @@ public class LeadOre extends Block {
 	}
 	
 	public static BlockItem getBlockItem() {
-		BlockItem i = new BlockItem(ModBlocks.LEAD_ORE,
-				new Item.Properties()
-				.group(ItemGroup.BUILDING_BLOCKS)
-				.maxStackSize(64));
+		BlockItem i = new BlockItem(
+				ModBlocks.LEAD_ORE,
+				new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64));
 		i.setRegistryName(REGISTRY_NAME);
 		return i;
 	}

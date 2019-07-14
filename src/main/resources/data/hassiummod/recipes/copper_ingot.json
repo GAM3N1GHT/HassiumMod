@@ -1,0 +1,7 @@
+{
+	"type": "smelting", 
+	"ingredient": { "item": "hassiummod:copper_ore" }, 
+	"result": "hassiummod:copper_ingot", 
+	"experience": 0.4, 
+	"cookingtime": 300 
+}
