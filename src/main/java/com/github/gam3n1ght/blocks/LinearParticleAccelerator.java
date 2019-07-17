@@ -6,7 +6,6 @@ import com.github.gam3n1ght.blocks.tileentities.LinearParticleAcceleratorTileEnt
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.FurnaceBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.LivingEntity;
@@ -82,6 +81,7 @@ public class LinearParticleAccelerator extends Block {
 
     @Override
     public boolean onBlockActivated(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockRayTraceResult result) {
+    	LOGGER.warn("!!!!! LinearParticleAccelerator onBlockActivated {}", state, pos.getX(), pos.getY(), pos.getZ());
         if (!world.isRemote) {
             TileEntity tileEntity = world.getTileEntity(pos);
             if (tileEntity instanceof INamedContainerProvider) {
@@ -89,8 +89,10 @@ public class LinearParticleAccelerator extends Block {
             } else {
                 throw new IllegalStateException("Our named container provider is missing!");
             }
+            LOGGER.warn("!!!!! LinearParticleAccelerator onBlockActivated RETURN TRUE");
             return true;
         }
+        LOGGER.warn("!!!!! LinearParticleAccelerator onBlockActivated RETURN SUPER");
         return super.onBlockActivated(state, world, pos, player, hand, result);
     }
 
